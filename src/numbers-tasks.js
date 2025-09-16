@@ -441,7 +441,6 @@ function isInteger(number) {
 function getFloatOnString(/* str */) {
   throw new Error('Not implemented');
 }
-
 /**
  * Returns an integer of the specified base or, if the number cannot be parsed
  * from the argument, returns NaN.
@@ -471,8 +470,8 @@ function getIntegerOnString(/* str, base */) {
  * 3.5      => false
  * 2 ** 53  => false
  */
-function isSafeInteger(/* number */) {
-  throw new Error('Not implemented');
+function isSafeInteger(number) {
+  return Number.isSafeInteger(number);
 }
 
 /**
