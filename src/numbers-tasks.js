@@ -255,8 +255,10 @@ function getCube(num) {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber(/* index */) {
-  throw new Error('Not implemented');
+function getFibonacciNumber(index) {
+  const fi = (1 + Math.sqrt(5)) / 2;
+  const ps = (1 - Math.sqrt(5)) / 2;
+  return Math.trunc((fi ** index - ps ** index) / Math.sqrt(5));
 }
 
 /**
